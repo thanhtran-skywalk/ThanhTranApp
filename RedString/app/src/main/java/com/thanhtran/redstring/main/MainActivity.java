@@ -4,11 +4,10 @@ import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.ViewPager;
 import android.widget.LinearLayout;
-
 import com.astuetz.PagerSlidingTabStrip;
+import com.thanhtran.redstring.R;
 import com.thanhtran.redstring.fragment.TabPagerAdapter;
 
-import redstring.thanhtran.com.redstring.R;
 
 public class MainActivity extends FragmentActivity {
     private LinearLayout view;

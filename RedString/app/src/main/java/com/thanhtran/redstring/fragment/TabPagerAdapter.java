@@ -7,10 +7,9 @@ package com.thanhtran.redstring.fragment;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
-
 import com.astuetz.PagerSlidingTabStrip;
+import com.thanhtran.redstring.R;
 
-import redstring.thanhtran.com.redstring.R;
 
 public class TabPagerAdapter extends FragmentStatePagerAdapter  implements PagerSlidingTabStrip.IconTabProvider {
     private int tabIcons[] = {R.drawable.time_line_selector, R.drawable.chat_selector, R.drawable.chart_selector,R.drawable.calendar_selector, R.drawable.settings_selector};
