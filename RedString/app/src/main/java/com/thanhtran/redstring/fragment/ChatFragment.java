@@ -7,15 +7,18 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import redstring.thanhtran.com.redstring.R;
+import com.thanhtran.redstring.R;
 
 /**
  * Created by ThanhTran on 9/28/2015.
  */
 public class ChatFragment extends Fragment {
+    public ChatFragment() {
+        System.out.println("init ChatFragment..........");
+    }
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View android = inflater.inflate(R.layout.chat, container, false);
-        return android;
+        return inflater.inflate(R.layout.chat, container, false);
     }
 }

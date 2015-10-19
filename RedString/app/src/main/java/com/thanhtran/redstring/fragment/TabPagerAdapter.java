@@ -9,11 +9,51 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 
 import com.astuetz.PagerSlidingTabStrip;
+import com.thanhtran.redstring.R;
 
-import redstring.thanhtran.com.redstring.R;
 
 public class TabPagerAdapter extends FragmentStatePagerAdapter  implements PagerSlidingTabStrip.IconTabProvider {
     private int tabIcons[] = {R.drawable.time_line_selector, R.drawable.chat_selector, R.drawable.chart_selector,R.drawable.calendar_selector, R.drawable.settings_selector};
+    private static TimeLineFragment timeLineFragment;
+    private static ChatFragment chatFragment;
+    private static LoveChartFragment loveChartFragment;
+    private static CalendarFragment calendarFragment;
+    private static SettingFragment settingFragment;
+
+    public static TimeLineFragment getTimeLineFragment() {
+        if(timeLineFragment == null){
+            timeLineFragment = new TimeLineFragment();
+        }
+        return timeLineFragment;
+    }
+
+    public static ChatFragment getChatFragment() {
+        if(chatFragment == null){
+            chatFragment = new ChatFragment();
+        }
+        return chatFragment;
+    }
+
+    public static LoveChartFragment getLoveChartFragment() {
+        if(loveChartFragment == null){
+            loveChartFragment = new LoveChartFragment();
+        }
+        return loveChartFragment;
+    }
+
+    public static CalendarFragment getCalendarFragment() {
+        if(calendarFragment == null){
+            calendarFragment = new CalendarFragment();
+        }
+        return calendarFragment;
+    }
+
+    public static SettingFragment getSettingFragment() {
+        if(settingFragment == null){
+            settingFragment = new SettingFragment();
+        }
+        return settingFragment;
+    }
 
     public TabPagerAdapter(FragmentManager fm) {
         super(fm);
@@ -28,15 +68,15 @@ public class TabPagerAdapter extends FragmentStatePagerAdapter  implements Pager
     public Fragment getItem(int position) {
         switch (position) {
             case 0:
-                return new TimeLineFragment();
+                return getTimeLineFragment();
             case 1:
-                return new ChatFragment();
+                return getChatFragment();
             case 2:
-                return new LoveChartFragment();
+                return getLoveChartFragment();
             case 3:
-                return new CalendarFragment();
+                return getCalendarFragment();
             case 4:
-                return new SettingFragment();
+                return getSettingFragment();
         }
 
         return null;
