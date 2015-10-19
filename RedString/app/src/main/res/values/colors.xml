@@ -2,7 +2,7 @@
 <resources>
     <color name="primary">#F44336</color>
     <color name="divider">#00000000</color>
-    <color name="primary_focus">#689F38</color>
+    <color name="primary_focus">#909086</color>
     <color name="hint_text_color">#E8B7B7</color>
     <color name="primary_light">#FFFFFF</color>
 </resources>
