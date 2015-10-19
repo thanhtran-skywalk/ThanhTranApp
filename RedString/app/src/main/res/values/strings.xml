@@ -3,4 +3,12 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+
+    <!-- Login Activity -->
+    <string name="password_hint">Password</string>
+    <string name="user_name">Username</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="login">Login</string>
+    <string name="title_activity_messaging">Messaging</string>
+    <string name="logo_description">Logo</string>
 </resources>

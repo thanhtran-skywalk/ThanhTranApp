@@ -10,9 +10,9 @@
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:textSize="14sp"
-        android:background="#FFFFFF"
-        app:pstsDividerColor="#00000000"
-        app:pstsIndicatorColor="#F44336"
+        android:background="@android:color/white"
+        app:pstsDividerColor="@color/divider"
+        app:pstsIndicatorColor="@color/primary"
         app:pstsIndicatorHeight="3dp"
 
         app:pstsTabPaddingLeftRight="14dp">

@@ -1,4 +1,4 @@
-package com.thanhtran.redstring.main;
+package com.thanhtran.redstring.activities;
 
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
@@ -16,7 +16,7 @@ public class MainActivity extends FragmentActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.main_activiry);
         ViewPager viewPager = (ViewPager) findViewById(R.id.viewpager);
         viewPager.setAdapter(new TabPagerAdapter(getSupportFragmentManager()));
         final PagerSlidingTabStrip tabsStrip = (PagerSlidingTabStrip) findViewById(R.id.tabs);
