@@ -10,8 +10,9 @@
     <dimen name="button_padding_horizontal">12dp</dimen>
 
     <!-- Login Activity -->
+    <dimen name="login_button_side_margin">4dp</dimen>
+    <dimen name="login_side_margin">25dp</dimen>
     <dimen name="login_title_top_margin">64dp</dimen>
-    <dimen name="login_edit_text_width">290dp</dimen>
     <dimen name="login_field_radius">8dp</dimen>
     <dimen name="login_field_padding">12dp</dimen>
     <dimen name="login_buttons_top_margin">18dp</dimen>

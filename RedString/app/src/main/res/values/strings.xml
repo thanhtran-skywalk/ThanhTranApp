@@ -5,11 +5,19 @@
     <string name="action_settings">Settings</string>
 
     <!-- Login Activity -->
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
     <string name="password_hint">Password</string>
+    <string name="re_password_hint">Re-Password</string>
     <string name="user_name">Email</string>
     <string name="sign_up">Sign Up</string>
     <string name="login">Login</string>
     <string name="title_activity_messaging">Messaging</string>
     <string name="logo_description">Logo</string>
     <string name="forgot_password">Forgot Password?</string>
+    <string name="rb_male">male</string>
+    <string name="rb_female">female</string>
+    <string name="select_avatar">select avatar...</string>
+    <string name="login_with_fb">Login With Facebook</string>
+
 </resources>
