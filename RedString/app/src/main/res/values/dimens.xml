@@ -11,10 +11,10 @@
 
     <!-- Login Activity -->
     <dimen name="login_title_top_margin">64dp</dimen>
-    <dimen name="login_edit_text_width">250dp</dimen>
+    <dimen name="login_edit_text_width">290dp</dimen>
     <dimen name="login_field_radius">8dp</dimen>
     <dimen name="login_field_padding">12dp</dimen>
-    <dimen name="login_buttons_top_margin">24dp</dimen>
+    <dimen name="login_buttons_top_margin">18dp</dimen>
     <dimen name="login_button_separation">8dp</dimen>
-    <dimen name="login_btn_width">121dp</dimen>
+    <dimen name="login_btn_width">141dp</dimen>
 </resources>

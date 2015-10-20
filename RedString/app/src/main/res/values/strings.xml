@@ -6,9 +6,10 @@
 
     <!-- Login Activity -->
     <string name="password_hint">Password</string>
-    <string name="user_name">Username</string>
+    <string name="user_name">Email</string>
     <string name="sign_up">Sign Up</string>
     <string name="login">Login</string>
     <string name="title_activity_messaging">Messaging</string>
     <string name="logo_description">Logo</string>
+    <string name="forgot_password">Forgot Password?</string>
 </resources>
