@@ -20,20 +20,25 @@
             android:layout_gravity="center"
             android:layout_marginBottom="@dimen/ui_element_separation">
 
-            <ImageView
-                android:layout_width="100dp"
-                android:layout_height="80dp"
+            <com.thanhtran.redstring.utils.CircleImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
                 android:id="@+id/img_avatar"
-                android:contentDescription="@string/logo_description"
-                android:src="@drawable/avatar"
+                android:src="@drawable/default_avatar"
                 android:layout_gravity="center_horizontal" />
-            <TextView
+
+            <Button
+                style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@color/primary"
-                android:textSize="@dimen/abc_text_size_large_material"
+                android:textAllCaps="false"
+                android:text="@string/select_avatar"
+                android:id="@+id/btn_select_avatar"
                 android:layout_gravity="center"
-                android:text="@string/select_avatar" />
+                android:textColor="@color/primary"
+                android:onClick="selectAvatar"
+                android:textSize="@dimen/abc_text_size_medium_material" />
+
 
         </LinearLayout>
         <EditText

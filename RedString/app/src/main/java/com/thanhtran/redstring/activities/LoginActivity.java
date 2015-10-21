@@ -53,7 +53,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 startMessagingActivity();
                 break;
             case R.id.btn_sign_up:
-             //   signUp();
+                startSignUpActivity();
                 break;
         }
     }
@@ -103,6 +103,14 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     private void startMessagingActivity() {
         Intent messagingActivity = new Intent(this, MainActivity.class);
         startActivity(messagingActivity);
+
+        // Subscribe to channel to receive messages
+//        ((MessagingApp) getApplication()).subscribeToMessagingChannel();
+    }
+
+    private void startSignUpActivity() {
+        Intent signUpActivity = new Intent(this, SignUpActivity.class);
+        startActivity(signUpActivity);
 
         // Subscribe to channel to receive messages
 //        ((MessagingApp) getApplication()).subscribeToMessagingChannel();
