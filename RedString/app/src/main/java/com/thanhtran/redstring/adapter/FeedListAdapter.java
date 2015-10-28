@@ -9,6 +9,7 @@ import java.util.List;
 
 import android.app.Activity;
 import android.content.Context;
+import android.graphics.Color;
 import android.text.Html;
 import android.text.TextUtils;
 import android.text.format.DateUtils;
@@ -52,8 +53,6 @@ public class FeedListAdapter extends BaseAdapter {
 	public View getView(int position, View convertView, ViewGroup parent) {
 
 		if (inflater == null)
-//			inflater = (LayoutInflater) activity
-//					.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 			inflater = (LayoutInflater)activity.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 		if (convertView == null)
 			convertView = inflater.inflate(R.layout.feed_item, null);

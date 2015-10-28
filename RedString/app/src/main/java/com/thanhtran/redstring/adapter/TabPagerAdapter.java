@@ -45,12 +45,6 @@ public class TabPagerAdapter extends FragmentStatePagerAdapter  implements Pager
         return loveChartFragment;
     }
 
-//    public static CalendarFragment getCalendarFragment() {
-//        if(calendarFragment == null){
-//            calendarFragment = new CalendarFragment();
-//        }
-//        return calendarFragment;
-//    }
 
     public static SettingFragment getSettingFragment() {
         if(settingFragment == null){

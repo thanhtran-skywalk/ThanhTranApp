@@ -22,11 +22,11 @@ public class MainActivity extends FragmentActivity {
         final PagerSlidingTabStrip tabsStrip = (PagerSlidingTabStrip) findViewById(R.id.tabs);
         tabsStrip.setViewPager(viewPager);
         view = (LinearLayout) tabsStrip.getChildAt(0);
-        setActivedIcon(view, 0);
+        setActiveIcon(view, 0);
         tabsStrip.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
             public void onPageSelected(int position) {
-                setActivedIcon(view, position);
+                setActiveIcon(view, position);
                 oldTabSelected = position;
             }
             @Override
@@ -40,7 +40,7 @@ public class MainActivity extends FragmentActivity {
         });
     }
 
-    private void setActivedIcon(LinearLayout view, int position) {
+    private void setActiveIcon(LinearLayout view, int position) {
         view.getChildAt(oldTabSelected).setSelected(false);
         view.getChildAt(position).setSelected(true);
     }
