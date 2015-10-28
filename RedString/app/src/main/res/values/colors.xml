@@ -4,13 +4,12 @@
     <color name="divider">#00000000</color>
     <color name="primary_focus">#909086</color>
     <color name="hint_text_color">#E8B7B7</color>
-    <color name="primary_light">#FFFFFF</color>
     <color name="dark">#FF222222</color>
     <color name="light">#FFEEEEEE</color>
-    <color name="white">#ffffff</color>
+    <color name="white">#FFFFFF</color>
     <color name="feed_bg">#d3d6db</color>
-    <color name="feed_item_bg">#ffffff</color>
     <color name="feed_item_border">#c2c3c8</color>
     <color name="link">#0a80d1</color>
     <color name="timestamp">#a0a3a7</color>
+    <color name="colorAccent">#FF4081</color>
 </resources>

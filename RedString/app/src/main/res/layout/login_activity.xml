@@ -84,7 +84,7 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/bg_button_login"
                 android:text="@string/login"
-                android:textColor="@color/primary_light"
+                android:textColor="@color/white"
                 android:layout_marginRight="@dimen/login_button_side_margin" />
 
             <Button
@@ -94,7 +94,7 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/bg_button_login"
                 android:text="@string/sign_up"
-                android:textColor="@color/primary_light"
+                android:textColor="@color/white"
                 android:layout_marginLeft="@dimen/login_button_side_margin" />
         </LinearLayout>
     <LinearLayout

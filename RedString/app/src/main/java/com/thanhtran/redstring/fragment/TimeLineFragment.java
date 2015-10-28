@@ -2,6 +2,8 @@ package com.thanhtran.redstring.fragment;
 
 
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -44,13 +46,21 @@ public class TimeLineFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View android = inflater.inflate(R.layout.time_line, container, false);
-        listView = (ListView) android.findViewById(R.id.news_feed);
+        View timeLineView = inflater.inflate(R.layout.time_line, container, false);
+        listView = (ListView) timeLineView.findViewById(R.id.news_feed);
         feedItems = new ArrayList<>();
         listAdapter = new FeedListAdapter(this.getActivity(), feedItems);
         listView.setAdapter(listAdapter);
         initNewsFeed();
-        return android;
+        FloatingActionButton fab = (FloatingActionButton) timeLineView.findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                        .setAction("Action", null).show();
+            }
+        });
+        return timeLineView;
     }
 
     private void initNewsFeed(){
