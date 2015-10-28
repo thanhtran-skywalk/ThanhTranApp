@@ -2,11 +2,14 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.thanhtran.redstring" >
 
+    <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/logo"
         android:label="@string/app_name"
+        android:name="com.thanhtran.redstring.app.AppController"
         android:theme="@style/Theme.AppCompat.NoActionBar" >
         <activity
             android:name="com.thanhtran.redstring.activities.LoginActivity"

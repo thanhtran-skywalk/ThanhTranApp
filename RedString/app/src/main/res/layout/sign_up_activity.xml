@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-        android:layout_height="match_parent" android:background="@android:color/white">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white">
     <LinearLayout
         android:id="@+id/base_view"
         android:layout_width="fill_parent"
@@ -12,35 +14,18 @@
         android:layout_marginRight="@dimen/login_side_margin"
         android:layout_centerInParent="true">
 
-        <LinearLayout
-            android:id="@+id/avatar_selector"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_gravity="center"
-            android:layout_marginBottom="@dimen/ui_element_separation">
+        <com.thanhtran.redstring.utils.CircleImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/img_avatar"
+            android:src="@drawable/default_avatar"
+            android:layout_gravity="center_horizontal"
+            android:onClick="selectAvatar"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/light"
+            android:layout_marginBottom="@dimen/ui_element_separation"
+            android:clickable="true" />
 
-            <com.thanhtran.redstring.utils.CircleImageView
-                android:layout_width="70dp"
-                android:layout_height="70dp"
-                android:id="@+id/img_avatar"
-                android:src="@drawable/default_avatar"
-                android:layout_gravity="center_horizontal" />
-
-            <Button
-                style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAllCaps="false"
-                android:text="@string/select_avatar"
-                android:id="@+id/btn_select_avatar"
-                android:layout_gravity="center"
-                android:textColor="@color/primary"
-                android:onClick="selectAvatar"
-                android:textSize="@dimen/abc_text_size_medium_material" />
-
-
-        </LinearLayout>
         <EditText
             android:id="@+id/txt_signup_email_field"
             android:background="@drawable/bg_login_field"
@@ -98,30 +83,6 @@
             android:hint="@string/re_password_hint"
             android:layout_marginBottom="@dimen/ui_element_separation" />
 
-        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <RadioButton android:id="@+id/radio_male"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:buttonTint="@color/primary"
-                android:textColor="@color/primary"
-                android:layout_weight="0.5"
-                android:text="@string/rb_male"
-                android:onClick="onRadioButtonClicked"
-                android:checked="true"
-                android:textSize="@dimen/abc_text_size_large_material" />
-            <RadioButton android:id="@+id/radio_female"
-                android:layout_width="wrap_content"
-                android:buttonTint="@color/primary"
-                android:textColor="@color/primary"
-                android:layout_weight="0.5"
-                android:layout_height="wrap_content"
-                android:text="@string/rb_female"
-                android:onClick="onRadioButtonClicked"
-                android:textSize="@dimen/abc_text_size_large_material" />
-        </RadioGroup>
 
         <Button
             android:id="@+id/btn_login"

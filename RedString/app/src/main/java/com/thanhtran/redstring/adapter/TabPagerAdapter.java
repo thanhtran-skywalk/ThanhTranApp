@@ -1,4 +1,4 @@
-package com.thanhtran.redstring.fragment;
+package com.thanhtran.redstring.adapter;
 
 /**
  * Created by ThanhTran on 9/28/2015.
@@ -10,6 +10,10 @@ import android.support.v4.app.FragmentStatePagerAdapter;
 
 import com.astuetz.PagerSlidingTabStrip;
 import com.thanhtran.redstring.R;
+import com.thanhtran.redstring.fragment.ChatFragment;
+import com.thanhtran.redstring.fragment.LoveChartFragment;
+import com.thanhtran.redstring.fragment.SettingFragment;
+import com.thanhtran.redstring.fragment.TimeLineFragment;
 
 
 public class TabPagerAdapter extends FragmentStatePagerAdapter  implements PagerSlidingTabStrip.IconTabProvider {

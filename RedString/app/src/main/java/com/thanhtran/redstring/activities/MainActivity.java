@@ -6,7 +6,7 @@ import android.support.v4.view.ViewPager;
 import android.widget.LinearLayout;
 import com.astuetz.PagerSlidingTabStrip;
 import com.thanhtran.redstring.R;
-import com.thanhtran.redstring.fragment.TabPagerAdapter;
+import com.thanhtran.redstring.adapter.TabPagerAdapter;
 
 
 public class MainActivity extends FragmentActivity {
