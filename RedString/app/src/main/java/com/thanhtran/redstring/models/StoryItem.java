@@ -1,14 +1,14 @@
 package com.thanhtran.redstring.models;
 
-public class FeedItem {
+public class StoryItem {
 	private int id;
 	private String name, status, image, profilePic, timeStamp, url;
 
-	public FeedItem() {
+	public StoryItem() {
 	}
 
-	public FeedItem(int id, String name, String image, String status,
-			String profilePic, String timeStamp, String url) {
+	public StoryItem(int id, String name, String image, String status,
+					 String profilePic, String timeStamp, String url) {
 		super();
 		this.id = id;
 		this.name = name;

@@ -1,9 +1,7 @@
 package com.thanhtran.redstring.fragment;
-
-
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -17,9 +15,10 @@ import com.android.volley.VolleyError;
 import com.android.volley.VolleyLog;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.thanhtran.redstring.R;
-import com.thanhtran.redstring.adapter.FeedListAdapter;
+import com.thanhtran.redstring.activities.AddLoveMsgActivity;
+import com.thanhtran.redstring.adapter.StoryAdapter;
 import com.thanhtran.redstring.app.AppController;
-import com.thanhtran.redstring.models.FeedItem;
+import com.thanhtran.redstring.models.StoryItem;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -30,34 +29,34 @@ import java.util.ArrayList;
 import java.util.List;
 
 
+
 /**
  * Created by ThanhTran on 9/28/2015.
  */
-public class TimeLineFragment extends Fragment {
-    private static final String TAG = TimeLineFragment.class.getSimpleName();
-    private ListView listView;
-    private FeedListAdapter listAdapter;
-    private List<FeedItem> feedItems;
+public class StoryFragment extends Fragment {
+    private static final String TAG = StoryFragment.class.getSimpleName();
+    private StoryAdapter listAdapter;
+    private List<StoryItem> storyItems;
     private String URL_FEED = "http://api.androidhive.info/feed/feed.json";
 
-    public TimeLineFragment() {
-        System.out.println("init TimeLineFragment..........");
+    public StoryFragment() {
+        System.out.println("init StoryFragment..........");
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View timeLineView = inflater.inflate(R.layout.time_line, container, false);
-        listView = (ListView) timeLineView.findViewById(R.id.news_feed);
-        feedItems = new ArrayList<>();
-        listAdapter = new FeedListAdapter(this.getActivity(), feedItems);
+        View timeLineView = inflater.inflate(R.layout.fragment_story, container, false);
+        ListView listView = (ListView) timeLineView.findViewById(R.id.news_feed);
+        storyItems = new ArrayList<>();
+        listAdapter = new StoryAdapter(this.getActivity(), storyItems);
         listView.setAdapter(listAdapter);
         initNewsFeed();
         FloatingActionButton fab = (FloatingActionButton) timeLineView.findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                Intent messagingActivity = new Intent(getContext(), AddLoveMsgActivity.class);
+                startActivity(messagingActivity);
             }
         });
         return timeLineView;
@@ -112,7 +111,7 @@ public class TimeLineFragment extends Fragment {
             for (int i = 0; i < feedArray.length(); i++) {
                 JSONObject feedObj = (JSONObject) feedArray.get(i);
 
-                FeedItem item = new FeedItem();
+                StoryItem item = new StoryItem();
                 item.setId(feedObj.getInt("id"));
                 item.setName(feedObj.getString("name"));
 
@@ -129,7 +128,7 @@ public class TimeLineFragment extends Fragment {
                         .getString("url");
                 item.setUrl(feedUrl);
 
-                feedItems.add(item);
+                storyItems.add(item);
             }
 
             // notify data changes to list adapater

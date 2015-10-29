@@ -28,6 +28,10 @@
             android:name=".activities.SignUpActivity"
             android:label="Sign Up" >
         </activity>
+        <activity
+            android:name=".activities.AddLoveMsgActivity"
+            android:label="Add New Story" >
+        </activity>
     </application>
 
 </manifest>

@@ -3,13 +3,12 @@ package com.thanhtran.redstring.adapter;
 import com.thanhtran.redstring.utils.FeedImageView;
 import com.thanhtran.redstring.R;
 import com.thanhtran.redstring.app.AppController;
-import com.thanhtran.redstring.models.FeedItem;
+import com.thanhtran.redstring.models.StoryItem;
 
 import java.util.List;
 
 import android.app.Activity;
 import android.content.Context;
-import android.graphics.Color;
 import android.text.Html;
 import android.text.TextUtils;
 import android.text.format.DateUtils;
@@ -23,25 +22,25 @@ import android.widget.TextView;
 import com.android.volley.toolbox.ImageLoader;
 import com.android.volley.toolbox.NetworkImageView;
 
-public class FeedListAdapter extends BaseAdapter {	
+public class StoryAdapter extends BaseAdapter {
 	private Activity activity;
 	private LayoutInflater inflater;
-	private List<FeedItem> feedItems;
+	private List<StoryItem> storyItems;
 	ImageLoader imageLoader = AppController.getInstance().getImageLoader();
 
-	public FeedListAdapter(Activity activity, List<FeedItem> feedItems) {
+	public StoryAdapter(Activity activity, List<StoryItem> storyItems) {
 		this.activity = activity;
-		this.feedItems = feedItems;
+		this.storyItems = storyItems;
 	}
 
 	@Override
 	public int getCount() {
-		return feedItems.size();
+		return storyItems.size();
 	}
 
 	@Override
 	public Object getItem(int location) {
-		return feedItems.get(location);
+		return storyItems.get(location);
 	}
 
 	@Override
@@ -55,7 +54,7 @@ public class FeedListAdapter extends BaseAdapter {
 		if (inflater == null)
 			inflater = (LayoutInflater)activity.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 		if (convertView == null)
-			convertView = inflater.inflate(R.layout.feed_item, null);
+			convertView = inflater.inflate(R.layout.customize_story_item, null);
 
 		if (imageLoader == null)
 			imageLoader = AppController.getInstance().getImageLoader();
@@ -71,7 +70,7 @@ public class FeedListAdapter extends BaseAdapter {
 		FeedImageView feedImageView = (FeedImageView) convertView
 				.findViewById(R.id.feedImage1);
 
-		FeedItem item = feedItems.get(position);
+		StoryItem item = storyItems.get(position);
 
 		name.setText(item.getName());
 

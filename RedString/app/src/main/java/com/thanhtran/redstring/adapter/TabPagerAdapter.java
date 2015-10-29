@@ -13,22 +13,21 @@ import com.thanhtran.redstring.R;
 import com.thanhtran.redstring.fragment.ChatFragment;
 import com.thanhtran.redstring.fragment.LoveChartFragment;
 import com.thanhtran.redstring.fragment.SettingFragment;
-import com.thanhtran.redstring.fragment.TimeLineFragment;
+import com.thanhtran.redstring.fragment.StoryFragment;
 
 
 public class TabPagerAdapter extends FragmentStatePagerAdapter  implements PagerSlidingTabStrip.IconTabProvider {
     private int tabIcons[] = {R.drawable.time_line_selector, R.drawable.chat_selector, R.drawable.chart_selector, R.drawable.settings_selector};
-    private static TimeLineFragment timeLineFragment;
+    private static StoryFragment storyFragment;
     private static ChatFragment chatFragment;
     private static LoveChartFragment loveChartFragment;
-    //private static CalendarFragment calendarFragment;
     private static SettingFragment settingFragment;
 
-    public static TimeLineFragment getTimeLineFragment() {
-        if(timeLineFragment == null){
-            timeLineFragment = new TimeLineFragment();
+   public static StoryFragment getStoryFragment() {
+        if(storyFragment == null){
+            storyFragment = new StoryFragment();
         }
-        return timeLineFragment;
+        return storyFragment;
     }
 
     public static ChatFragment getChatFragment() {
@@ -66,13 +65,11 @@ public class TabPagerAdapter extends FragmentStatePagerAdapter  implements Pager
     public Fragment getItem(int position) {
         switch (position) {
             case 0:
-                return getTimeLineFragment();
+                return getStoryFragment();
             case 1:
                 return getChatFragment();
             case 2:
                 return getLoveChartFragment();
-//            case 3:
-//                return getCalendarFragment();
             case 3:
                 return getSettingFragment();
         }
