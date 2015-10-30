@@ -1,4 +1,5 @@
 package com.thanhtran.redstring.fragment;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -27,7 +28,6 @@ import org.json.JSONObject;
 import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 import java.util.List;
-
 
 
 /**
@@ -62,7 +62,7 @@ public class StoryFragment extends Fragment {
         return timeLineView;
     }
 
-    private void initNewsFeed(){
+    private void initNewsFeed() {
         // We first check for cached request
         Cache cache = AppController.getInstance().getRequestQueue().getCache();
         Cache.Entry entry = cache.get(URL_FEED);

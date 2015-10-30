@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.ViewPager;
 import android.widget.LinearLayout;
+
 import com.astuetz.PagerSlidingTabStrip;
 import com.thanhtran.redstring.R;
 import com.thanhtran.redstring.adapter.TabPagerAdapter;
@@ -29,10 +30,12 @@ public class MainActivity extends FragmentActivity {
                 setActiveIcon(view, position);
                 oldTabSelected = position;
             }
+
             @Override
             public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
                 // Code goes here
             }
+
             @Override
             public void onPageScrollStateChanged(int state) {
                 // Code goes here

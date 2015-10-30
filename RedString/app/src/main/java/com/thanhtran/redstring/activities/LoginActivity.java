@@ -12,7 +12,7 @@ import com.thanhtran.redstring.R;
  * Created by admin on 10/19/15.
  */
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
-//    private static final String TAG = "LoginActivity";
+    //    private static final String TAG = "LoginActivity";
 //    private EditText usernameField, passwordField;
     private Button btnSignUp, btnLogin;
 //    private ProgressDialog progressDialog;
@@ -39,9 +39,9 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
     @Override
     public void onClick(View v) {
-        switch(v.getId()) {
+        switch (v.getId()) {
             case R.id.btn_login:
-               // login();
+                // login();
                 startMessagingActivity();
                 break;
             case R.id.btn_sign_up:
@@ -49,7 +49,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 break;
         }
     }
-//
+
+    //
 //    private void login() {
 //        showProgressDialog("Logging In", "One moment please...");
 //        String userName = usernameField.getText().toString().trim();

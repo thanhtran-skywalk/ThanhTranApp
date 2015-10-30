@@ -8,7 +8,7 @@ import com.thanhtran.redstring.R;
 /**
  * Created by admin on 10/29/15.
  */
-public class AddLoveMsgActivity  extends AppCompatActivity {
+public class AddLoveMsgActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -16,29 +16,29 @@ import com.thanhtran.redstring.fragment.SettingFragment;
 import com.thanhtran.redstring.fragment.StoryFragment;
 
 
-public class TabPagerAdapter extends FragmentStatePagerAdapter  implements PagerSlidingTabStrip.IconTabProvider {
+public class TabPagerAdapter extends FragmentStatePagerAdapter implements PagerSlidingTabStrip.IconTabProvider {
     private int tabIcons[] = {R.drawable.time_line_selector, R.drawable.chat_selector, R.drawable.chart_selector, R.drawable.settings_selector};
     private static StoryFragment storyFragment;
     private static ChatFragment chatFragment;
     private static LoveChartFragment loveChartFragment;
     private static SettingFragment settingFragment;
 
-   public static StoryFragment getStoryFragment() {
-        if(storyFragment == null){
+    public static StoryFragment getStoryFragment() {
+        if (storyFragment == null) {
             storyFragment = new StoryFragment();
         }
         return storyFragment;
     }
 
     public static ChatFragment getChatFragment() {
-        if(chatFragment == null){
+        if (chatFragment == null) {
             chatFragment = new ChatFragment();
         }
         return chatFragment;
     }
 
     public static LoveChartFragment getLoveChartFragment() {
-        if(loveChartFragment == null){
+        if (loveChartFragment == null) {
             loveChartFragment = new LoveChartFragment();
         }
         return loveChartFragment;
@@ -46,7 +46,7 @@ public class TabPagerAdapter extends FragmentStatePagerAdapter  implements Pager
 
 
     public static SettingFragment getSettingFragment() {
-        if(settingFragment == null){
+        if (settingFragment == null) {
             settingFragment = new SettingFragment();
         }
         return settingFragment;

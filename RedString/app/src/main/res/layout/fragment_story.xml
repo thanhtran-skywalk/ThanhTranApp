@@ -8,7 +8,7 @@
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:orientation="vertical" >
+        android:orientation="vertical">
 
         <ListView
             android:id="@+id/news_feed"
@@ -18,12 +18,13 @@
 
     </LinearLayout>
 
-<android.support.design.widget.FloatingActionButton
-    android:id="@+id/fab"
-    android:layout_width="wrap_content" android:layout_height="wrap_content"
-    android:layout_gravity="bottom|end" android:layout_margin="@dimen/fab_margin"
-    android:src="@drawable/add_content"
-    app:backgroundTint="@color/primary"
-    />
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/add_content"
+        app:backgroundTint="@color/primary" />
 
 </android.support.design.widget.CoordinatorLayout>

@@ -15,8 +15,7 @@
         app:pstsIndicatorColor="@color/primary"
         app:pstsIndicatorHeight="3dp"
 
-        app:pstsTabPaddingLeftRight="14dp">
-    </com.astuetz.PagerSlidingTabStrip>
+        app:pstsTabPaddingLeftRight="14dp"></com.astuetz.PagerSlidingTabStrip>
 
     <android.support.v4.view.ViewPager
         android:id="@+id/viewpager"

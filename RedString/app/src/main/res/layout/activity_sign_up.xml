@@ -5,6 +5,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@android:color/white">
+
     <LinearLayout
         android:id="@+id/base_view"
         android:layout_width="fill_parent"
@@ -48,6 +49,7 @@
             android:hint="@string/first_name"
             android:layout_marginBottom="@dimen/ui_element_separation"
             android:layout_width="fill_parent" />
+
         <EditText
             android:id="@+id/txt_signup_last_name_field"
             android:background="@drawable/bg_login_field"

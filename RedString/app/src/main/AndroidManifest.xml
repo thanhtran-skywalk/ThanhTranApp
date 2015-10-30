@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.thanhtran.redstring" >
+    package="com.thanhtran.redstring">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
@@ -10,10 +10,10 @@
         android:icon="@mipmap/logo"
         android:label="@string/app_name"
         android:name="com.thanhtran.redstring.app.AppController"
-        android:theme="@style/Theme.AppCompat.NoActionBar" >
+        android:theme="@style/Theme.AppCompat.NoActionBar">
         <activity
             android:name=".activities.LoginActivity"
-            android:label="@string/app_name" >
+            android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -22,16 +22,13 @@
         </activity>
         <activity
             android:name=".activities.MainActivity"
-            android:label="Red String - Main" >
-        </activity>
+            android:label="Red String - Main"></activity>
         <activity
             android:name=".activities.SignUpActivity"
-            android:label="Sign Up" >
-        </activity>
+            android:label="Sign Up"></activity>
         <activity
             android:name=".activities.AddLoveMsgActivity"
-            android:label="Add New Story" >
-        </activity>
+            android:label="Add New Story"></activity>
     </application>
 
 </manifest>
