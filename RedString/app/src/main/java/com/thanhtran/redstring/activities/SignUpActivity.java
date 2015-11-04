@@ -39,13 +39,16 @@ public class SignUpActivity extends AppCompatActivity {
 
             Cursor cursor = getContentResolver().query(selectedImage,
                     filePathColumn, null, null, null);
-            cursor.moveToFirst();
-            int columnIndex = cursor.getColumnIndex(filePathColumn[0]);
-            String picturePath = cursor.getString(columnIndex);
-            cursor.close();
+            if (cursor != null) {
+                cursor.moveToFirst();
 
-            ImageView imageView = (ImageView) findViewById(R.id.img_avatar);
-            imageView.setImageBitmap(BitmapFactory.decodeFile(picturePath));
+                int columnIndex = cursor.getColumnIndex(filePathColumn[0]);
+                String picturePath = cursor.getString(columnIndex);
+                cursor.close();
+
+                ImageView imageView = (ImageView) findViewById(R.id.img_avatar);
+                imageView.setImageBitmap(BitmapFactory.decodeFile(picturePath));
+            }
 
         }
     }
