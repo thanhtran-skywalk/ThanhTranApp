@@ -1,9 +1,9 @@
 package parse.com.android.thanhtran.newstoryview;
 
 import android.app.ActionBar;
-import android.os.Bundle;
+import android.app.ActionBar.LayoutParams;
 import android.app.Activity;
-import android.content.Intent;
+import android.os.Bundle;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -11,11 +11,10 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
-import android.app.ActionBar.LayoutParams;
 
 
 public class MainActivity extends Activity {
-
+	private Menu menu;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -34,7 +33,8 @@ public class MainActivity extends Activity {
 	    MenuInflater inflater = getMenuInflater();
 	    inflater.inflate(R.menu.main_activity_bar, menu);
 		this.setTitle("Add new Story...");
-		this.getActionBar().setIcon(R.drawable.mail);
+		this.getActionBar().setIcon(R.mipmap.pencil_selected);
+		this.menu = menu;
 	    return super.onCreateOptionsMenu(menu);
 	}
 
@@ -52,16 +52,13 @@ public class MainActivity extends Activity {
 	public boolean onOptionsItemSelected(MenuItem item) {
 	    // Handle presses on the action bar items
 	    switch (item.getItemId()) {
-			case R.id.my_action:
-				Toast.makeText(this, "Gear clicked", Toast.LENGTH_SHORT).show();
-				return true;
-	        case R.id.action_record:
+	        case R.id.action_bar_smiley:
 	        	Toast.makeText(this, "Record clicked", Toast.LENGTH_SHORT).show();
 	            return true;
-	        case R.id.action_save:
+	        case R.id.action_bar_image:
 	        	Toast.makeText(this, "Save clicked", Toast.LENGTH_SHORT).show();
 	            return true;
-	        case R.id.action_label:
+	        case R.id.action_bar_random:
 	        	Toast.makeText(this, "Label clicked", Toast.LENGTH_SHORT).show();
 	            return true;
 	        default:
