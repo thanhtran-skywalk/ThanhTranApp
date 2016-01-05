@@ -90,6 +90,7 @@
                 android:background="@drawable/bg_button_login"
                 android:text="@string/login"
                 android:textColor="@color/white"
+                android:onClick="loginAction"
                 android:layout_marginRight="@dimen/login_button_side_margin" />
 
             <Button
@@ -100,6 +101,7 @@
                 android:background="@drawable/bg_button_login"
                 android:text="@string/sign_up"
                 android:textColor="@color/white"
+                android:onClick="startSignUpActivity"
                 android:layout_marginLeft="@dimen/login_button_side_margin" />
         </LinearLayout>
 

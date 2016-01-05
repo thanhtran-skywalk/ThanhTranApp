@@ -20,4 +20,7 @@
     <string name="select_avatar">select avatar...</string>
     <string name="login_with_fb">Login With Facebook</string>
 
+    <!-- Parse Key -->
+    <string name="app_key">LxbXmq7lYZYbGMyN6mVASXxdNqr9HmVitS54bSFV</string>
+    <string name="client_key">1ex9zIFUOb1LIFVBpj826drvryimyPvA8s2Nlgqo</string>
 </resources>

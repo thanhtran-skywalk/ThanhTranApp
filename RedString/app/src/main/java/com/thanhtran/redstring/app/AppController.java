@@ -7,6 +7,7 @@ import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.ImageLoader;
 import com.android.volley.toolbox.Volley;
+import com.parse.Parse;
 import com.thanhtran.redstring.utils.LruBitmapCache;
 
 public class AppController extends Application {
@@ -23,6 +24,12 @@ public class AppController extends Application {
     public void onCreate() {
         super.onCreate();
         mInstance = this;
+        initParse();
+    }
+
+    private void initParse(){
+        Parse.enableLocalDatastore(this);
+        Parse.initialize(this);
     }
 
     public static synchronized AppController getInstance() {
