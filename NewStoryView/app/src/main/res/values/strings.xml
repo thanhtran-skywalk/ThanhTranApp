@@ -33,4 +33,8 @@
     <string name="pick_one_photo">Pick Single Photo</string>
     <string name="pick_photo_gif">Pick Photos (show gif)</string>
 
+    <!-- Parse Application Key-->
+    <string name="app_key">LxbXmq7lYZYbGMyN6mVASXxdNqr9HmVitS54bSFV</string>
+    <string name="client_key">1ex9zIFUOb1LIFVBpj826drvryimyPvA8s2Nlgqo</string>
+
 </resources>

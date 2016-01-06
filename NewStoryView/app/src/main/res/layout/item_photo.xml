@@ -19,7 +19,6 @@
       android:layout_alignParentTop="true"
       android:layout_alignParentRight="true"
       android:clickable="true"
-      android:padding="5dip"
       android:id="@+id/v_selected"
       android:src="@drawable/photo_checkbox_bg"
       android:layout_width="wrap_content"

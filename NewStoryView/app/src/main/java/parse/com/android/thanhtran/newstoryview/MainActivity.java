@@ -16,8 +16,12 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
+import com.parse.ParseUser;
+
 import java.util.ArrayList;
 import java.util.List;
+
+import parse.com.android.thanhtran.newstoryview.user.UserUtils;
 
 
 public class MainActivity extends Activity {
@@ -53,6 +57,7 @@ public class MainActivity extends Activity {
 	    inflater.inflate(R.menu.main_activity_bar, menu);
 		this.setTitle("Add new Story...");
 		this.getActionBar().setIcon(R.mipmap.pencil_selected);
+
 		this.menu = menu;
 	    return super.onCreateOptionsMenu(menu);
 	}
@@ -67,6 +72,9 @@ public class MainActivity extends Activity {
 	    // Handle presses on the action bar items
 	    switch (item.getItemId()) {
 	        case R.id.action_bar_smiley:
+                //UserUtils.testParseRelationalData();
+				ParseUser user = UserUtils.getUserByName("kid");
+
 	        	Toast.makeText(this, "Record clicked", Toast.LENGTH_SHORT).show();
 	            return true;
 	        case R.id.action_bar_image:
@@ -76,6 +84,7 @@ public class MainActivity extends Activity {
 	            return true;
 	        case R.id.action_bar_random:
 	        	Toast.makeText(this, "Label clicked", Toast.LENGTH_SHORT).show();
+				UserUtils.signUp();
 	            return true;
 	        default:
 	            return super.onOptionsItemSelected(item);

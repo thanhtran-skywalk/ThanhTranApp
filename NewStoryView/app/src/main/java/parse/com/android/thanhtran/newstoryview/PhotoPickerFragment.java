@@ -4,16 +4,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.DefaultItemAnimator;
-import android.support.v7.widget.ListPopupWindow;
 import android.support.v7.widget.OrientationHelper;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
-import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
-import android.widget.Button;
 import com.bumptech.glide.Glide;
 import java.util.ArrayList;
 import java.util.List;
@@ -22,10 +18,6 @@ import java.util.List;
 
 import static android.app.Activity.RESULT_OK;
 
-
-/**
- * Created by donglua on 15/5/31.
- */
 public class PhotoPickerFragment extends Fragment {
   public final static String EXTRA_SHOW_GIF      = "SHOW_GIF";
   public final static int INDEX_ALL_PHOTOS = 0;

@@ -1,5 +1,6 @@
 package parse.com.android.thanhtran.newstoryview;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
@@ -8,6 +9,7 @@ import android.net.Uri;
 /**
  * Created by donglua on 15/7/2.
  */
+@SuppressLint("ParcelCreator")
 public class PhotoPickerIntent extends Intent {
 
   private PhotoPickerIntent() {

@@ -3,35 +3,19 @@
 
   <item android:state_selected="true">
     <layer-list>
-      <item>
-        <shape>
-          <corners android:radius="2dip"/>
-          <padding android:top="-2dip"
-              android:left="-2dip"
-              android:bottom="-2dip"
-              android:right="-2dip"/>
-          <stroke android:width="1dip"
-              android:color="@android:color/white"/>
-        </shape>
-      </item>
-      <item android:drawable="@drawable/checkbox_marked"/>
+        <item>
+            <shape>
+                <corners android:radius="3dip"/>
+                <solid android:color="#ffffff"/>
+            </shape>
+        </item>
+        <item android:drawable="@mipmap/checked_box"/>
     </layer-list>
   </item>
 
   <item>
     <layer-list>
-      <item>
-        <shape>
-          <corners android:radius="2dip"/>
-          <padding android:top="-2dip"
-              android:left="-2dip"
-              android:bottom="-2dip"
-              android:right="-2dip"/>
-          <stroke android:width="1dip"
-              android:color="@android:color/white"/>
-        </shape>
-      </item>
-      <item android:drawable="@drawable/ic_checkbox_blank_grey600_24dp"/>
+        <item android:drawable="@mipmap/unchecked_box"/>
     </layer-list>
   </item>
 

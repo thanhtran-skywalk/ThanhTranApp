@@ -100,32 +100,13 @@ public class PhotoGridAdapter extends SelectableAdapter<PhotoGridAdapter.PhotoVi
 
       holder.ivPhoto.setOnClickListener(new View.OnClickListener() {
         @Override public void onClick(View view) {
-          boolean isEnable = true;
-
-          if (onItemCheckListener != null) {
-            isEnable = onItemCheckListener.OnItemCheck(position, photo, isChecked,
-                    getSelectedPhotos().size());
-          }
-          if (isEnable) {
-            toggleSelection(photo);
-            notifyItemChanged(position);
-          }
+          selectPhoto(position, photo, isChecked);
         }
       });
       holder.vSelected.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View view) {
-
-          boolean isEnable = true;
-
-          if (onItemCheckListener != null) {
-            isEnable = onItemCheckListener.OnItemCheck(position, photo, isChecked,
-                    getSelectedPhotos().size());
-          }
-          if (isEnable) {
-            toggleSelection(photo);
-            notifyItemChanged(position);
-          }
+          selectPhoto(position, photo, isChecked);
         }
       });
     }
@@ -133,6 +114,18 @@ public class PhotoGridAdapter extends SelectableAdapter<PhotoGridAdapter.PhotoVi
 //    } else {
 //      holder.ivPhoto.setImageResource(R.drawable.camera);
 //    }
+  }
+
+  private void selectPhoto(int position, Photo photo, Boolean isChecked){
+    boolean isEnable = true;
+    if (onItemCheckListener != null) {
+      isEnable = onItemCheckListener.OnItemCheck(position, photo, isChecked,
+              getSelectedPhotos().size());
+    }
+    if (isEnable) {
+      toggleSelection(photo);
+      notifyItemChanged(position);
+    }
   }
 
 

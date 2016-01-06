@@ -8,23 +8,24 @@
         <item name="android:actionBarStyle">@style/MyActionBar</item>
     </style>
     <style name="MyActionBar" parent="@android:style/Widget.Holo.Light.ActionBar">
-        <item name="android:background">@drawable/custom_background_bar</item>
-        <item name="android:backgroundSplit">@drawable/bottom_navbar_background</item>
+        <item name="android:background">#ff572d</item>
+        <!--<item name="android:background">@drawable/custom_background_bar</item>-->
+        <!--<item name="android:backgroundSplit">@drawable/bottom_navbar_background</item>-->
         <item name="android:titleTextStyle">@style/Theme.Styled.ActionBar.TitleTextStyle</item>
     </style>
     <style name="Theme.Styled.ActionBar.TitleTextStyle" parent="@android:style/Widget.TextView">
         <item name="android:textSize">14sp</item>
-        <item name="android:textColor">#ffff0000</item>
+        <item name="android:textColor">#ffffff</item>
     </style>
 
     <style name="myTheme.actionBar" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
-        <item name="android:textColorPrimary">#0000ff</item>
+        <item name="android:textColorPrimary">#ffffff</item>
         <item name="actionBarSize">@dimen/iwf_actionBarSize</item>
     </style>
 
     <style name="myTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="actionBarTheme">@style/myTheme.actionBar</item>
-        <item name="colorPrimary">#00FF00</item>
+        <item name="colorPrimary">#ff572d</item>
         <item name="actionBarSize">@dimen/iwf_actionBarSize</item>
     </style>
 </resources>
