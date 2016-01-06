@@ -1,4 +1,4 @@
-package com.thanhtran.redstring.activities;
+package com.thanhtran.redstring.newstory.activities;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -12,6 +12,8 @@ public class AddLoveMsgActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_add_love_msg);
+        setContentView(R.layout.story_activity_add_love_msg);
     }
 }
+
+

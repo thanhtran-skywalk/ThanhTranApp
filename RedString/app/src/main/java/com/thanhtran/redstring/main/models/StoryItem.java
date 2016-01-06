@@ -1,4 +1,4 @@
-package com.thanhtran.redstring.models;
+package com.thanhtran.redstring.main.models;
 
 public class StoryItem {
     private int id;

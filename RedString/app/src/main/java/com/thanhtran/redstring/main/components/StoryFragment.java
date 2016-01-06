@@ -1,4 +1,4 @@
-package com.thanhtran.redstring.fragment;
+package com.thanhtran.redstring.main.components;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -16,10 +16,10 @@ import com.android.volley.VolleyError;
 import com.android.volley.VolleyLog;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.thanhtran.redstring.R;
-import com.thanhtran.redstring.activities.AddLoveMsgActivity;
-import com.thanhtran.redstring.adapter.StoryAdapter;
+import com.thanhtran.redstring.newstory.activities.AddLoveMsgActivity;
+import com.thanhtran.redstring.main.adapter.StoryAdapter;
 import com.thanhtran.redstring.app.AppController;
-import com.thanhtran.redstring.models.StoryItem;
+import com.thanhtran.redstring.main.models.StoryItem;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -45,7 +45,7 @@ public class StoryFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View timeLineView = inflater.inflate(R.layout.fragment_story, container, false);
+        View timeLineView = inflater.inflate(R.layout.main_fragment_story, container, false);
         ListView listView = (ListView) timeLineView.findViewById(R.id.news_feed);
         storyItems = new ArrayList<>();
         listAdapter = new StoryAdapter(this.getActivity(), storyItems);

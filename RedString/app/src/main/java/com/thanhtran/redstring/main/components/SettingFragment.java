@@ -1,4 +1,4 @@
-package com.thanhtran.redstring.fragment;
+package com.thanhtran.redstring.main.components;
 
 
 import android.os.Bundle;
@@ -20,6 +20,6 @@ public class SettingFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_settings, container, false);
+        return inflater.inflate(R.layout.main_fragment_settings, container, false);
     }
 }

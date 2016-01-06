@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/white"
-    tools:context="com.thanhtran.redstring.activities.LoginActivity">
+    tools:context=".main.activities.LoginActivity">
 
     <LinearLayout
         android:id="@+id/base_view"

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="primary">#F44336</color>
+    <color name="primary">#ff572d</color>
     <color name="divider">#00000000</color>
     <color name="primary_focus">#909086</color>
     <color name="hint_text_color">#E8B7B7</color>

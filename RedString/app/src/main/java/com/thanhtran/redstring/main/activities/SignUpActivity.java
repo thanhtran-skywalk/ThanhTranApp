@@ -1,4 +1,4 @@
-package com.thanhtran.redstring.activities;
+package com.thanhtran.redstring.main.activities;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
@@ -9,7 +9,6 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -36,7 +35,7 @@ public class SignUpActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sign_up);
+        setContentView(R.layout.main_activity_sign_up);
         progressDialog = new ProgressDialog(this);
         progressDialog.setCanceledOnTouchOutside(false);
     }
@@ -98,7 +97,9 @@ public class SignUpActivity extends AppCompatActivity {
                         public void done(ParseException e) {
                             hideProgressDialog();
                             if (e == null) {
-                                startMainActivity();
+                                Intent intent = new Intent();
+                                setResult(RESULT_OK, intent);
+                                finish();
                             } else {
                                 Toast.makeText(getApplicationContext(),
                                         "Sign up Error", Toast.LENGTH_LONG)
@@ -126,9 +127,5 @@ public class SignUpActivity extends AppCompatActivity {
     private void hideProgressDialog() {
         progressDialog.hide();
     }
-    private void startMainActivity() {
-        Intent messagingActivity = new Intent(this, MainActivity.class);
-        startActivity(messagingActivity);
-        finish();
-    }
+
 }

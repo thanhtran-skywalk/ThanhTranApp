@@ -1,4 +1,4 @@
-package com.thanhtran.redstring.adapter;
+package com.thanhtran.redstring.main.adapter;
 
 import android.app.Activity;
 import android.content.Context;
@@ -16,7 +16,7 @@ import com.android.volley.toolbox.ImageLoader;
 import com.android.volley.toolbox.NetworkImageView;
 import com.thanhtran.redstring.R;
 import com.thanhtran.redstring.app.AppController;
-import com.thanhtran.redstring.models.StoryItem;
+import com.thanhtran.redstring.main.models.StoryItem;
 import com.thanhtran.redstring.utils.FeedImageView;
 
 import java.util.List;
@@ -53,7 +53,7 @@ public class StoryAdapter extends BaseAdapter {
         if (inflater == null)
             inflater = (LayoutInflater) activity.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         if (convertView == null)
-            convertView = inflater.inflate(R.layout.customize_story_item, null);
+            convertView = inflater.inflate(R.layout.main_customize_story_item, null);
 
         if (imageLoader == null)
             imageLoader = AppController.getInstance().getImageLoader();
