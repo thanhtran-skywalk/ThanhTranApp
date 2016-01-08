@@ -1,0 +1,21 @@
+<resources>
+    <string name="image">image</string>
+    <string name="all_image">All images</string>
+    <string name="preview">preview</string>
+    <string name="msg_no_camera">There are no camera</string>
+    <string name="msg_amount_limit">Amount limited</string>
+    <string name="done">done</string>
+    <string name="done_with_count">Done(%1$d/%2$d)</string>
+    <string name="image_index">%1$d/%2$d</string>
+    <string name="delete">delete</string>
+    <string name="deleted_a_photo">delete a photo</string>
+    <string name="confirm_to_delete">Are you sure to delete？</string>
+    <string name="yes">Yes</string>
+    <string name="cancel">Cancel</string>
+    <string name="undo">Undo</string>
+
+    <string name="app_name">PhotoPicker</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+</resources>
