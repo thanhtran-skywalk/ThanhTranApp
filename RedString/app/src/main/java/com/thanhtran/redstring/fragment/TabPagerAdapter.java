@@ -13,11 +13,10 @@ import com.thanhtran.redstring.R;
 
 
 public class TabPagerAdapter extends FragmentStatePagerAdapter  implements PagerSlidingTabStrip.IconTabProvider {
-    private int tabIcons[] = {R.drawable.time_line_selector, R.drawable.chat_selector, R.drawable.chart_selector,R.drawable.calendar_selector, R.drawable.settings_selector};
+    private int tabIcons[] = {R.drawable.time_line_selector, R.drawable.chat_selector, R.drawable.chart_selector, R.drawable.settings_selector};
     private static TimeLineFragment timeLineFragment;
     private static ChatFragment chatFragment;
     private static LoveChartFragment loveChartFragment;
-    private static CalendarFragment calendarFragment;
     private static SettingFragment settingFragment;
 
     public static TimeLineFragment getTimeLineFragment() {
@@ -39,13 +38,6 @@ public class TabPagerAdapter extends FragmentStatePagerAdapter  implements Pager
             loveChartFragment = new LoveChartFragment();
         }
         return loveChartFragment;
-    }
-
-    public static CalendarFragment getCalendarFragment() {
-        if(calendarFragment == null){
-            calendarFragment = new CalendarFragment();
-        }
-        return calendarFragment;
     }
 
     public static SettingFragment getSettingFragment() {
@@ -74,8 +66,6 @@ public class TabPagerAdapter extends FragmentStatePagerAdapter  implements Pager
             case 2:
                 return getLoveChartFragment();
             case 3:
-                return getCalendarFragment();
-            case 4:
                 return getSettingFragment();
         }
 
